@@ -13,6 +13,10 @@
         color: white;
         background-color: rgb(89, 89, 232);
       }
+      tfoot th {
+            color: white;
+            background-color: rgb(89, 89, 232);
+      }
       th {
         border: 1px solid black;
         padding: 10px 10px 15px 10px;}
@@ -47,15 +51,21 @@
       </tfoot>
       <thead>
         <tr>
-          <th colspan="2">Beer</th>
-          <th>Alcohol</th>
-          <th>IBU</td>
+          <tr>
+              <th colspan="2" rowspan="2">Beer</th>
+              <th colspan="2">Stats</th>
+          </tr>
+          <tr>
+              <th>Alcohol</th>
+              <th>IBU</th>
+          </tr>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th rowspan="3">Matanuska
-            <img src="foobar.png">
+            <br /><br />
+            <img src="matanuska.png" width="75" class="center">
           </th>
           <td>Snow Bike</td>
           <td>4.7% </td>
@@ -72,7 +82,8 @@
         </tr>
         <tr>
           <th rowspan="2">Denali
-            <img src="foobar.png">
+            <br /><br />
+            <img src="denali.png" width="75" class="center">
           </th>
           <td>The Big DIPA</td>
           <td>8.5% </td>
@@ -83,7 +94,8 @@
           <td>71</td></tr>
         <tr>
           <th rowspan="2">Forty-Ninth State
-            <img src="foobar.png">
+            <br /><br />
+            <img src="fortyninth.png" width="75" class="center">
           </th>
           <td>Solstice IPA</td>
           <td>6.8% </td>
