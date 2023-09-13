@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Beers</title>
-    <div>Test Change</div>
     <style>
       table {
         border: 1px solid black;
         border-collapse: collapse;
       }
-      thead th {
+      thead th , tfoot{
         color: white;
         background-color: rgb(89, 89, 232);
       }
       th {
         border: 1px solid black;
-        padding: 10px 10px 15px 10px;}
+        padding: 10px 10px 15px 10px;
+      }
       td {
         border: 1px dashed red;
         padding: 10px;
@@ -29,6 +29,10 @@
       }
       tr:hover {
         background-color: #bbbbbb;
+      }
+      img {
+        max-width: 60%;
+        padding-top: 5px;
       }
     </style>
   </head>
@@ -48,15 +52,19 @@
       </tfoot>
       <thead>
         <tr>
-          <th colspan="2">Beer</th>
+          <th colspan="2" rowspan="2" style="width: 10vw;">Beer</th>
+          <th colspan="2">Stats</th>
+        </tr>
+        <tr>
           <th>Alcohol</th>
-          <th>IBU</td>
+          <th colspan="2" >IBU</td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th rowspan="3">Matanuska
-            <img src="foobar.png">
+          <th rowspan="3" colspan="'2" style="width: 7vw;">Matanuska
+            <br>
+            <img src="matanuska.png">
           </th>
           <td>Snow Bike</td>
           <td>4.7% </td>
@@ -73,7 +81,8 @@
         </tr>
         <tr>
           <th rowspan="2">Denali
-            <img src="foobar.png">
+            <br>
+            <img src="denali.png">
           </th>
           <td>The Big DIPA</td>
           <td>8.5% </td>
@@ -84,7 +93,8 @@
           <td>71</td></tr>
         <tr>
           <th rowspan="2">Forty-Ninth State
-            <img src="foobar.png">
+            <br>
+            <img src="fortyninth.png">
           </th>
           <td>Solstice IPA</td>
           <td>6.8% </td>
